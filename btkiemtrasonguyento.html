@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapSo= parseFloat(prompt("nhap so can xet"));
+    isPrime(nhapSo);
+  function isPrime(number){
+      let count=0;
+      let SNT=false;
+      if(number==0){
+          document.write(number+" ko phai so nguyen to");
+      }
+      for(let i=1;i<=number;i++) {
+          if(number%i==0){
+              count+=1
+          }
+      } if(count==2){
+          SNT=true;
+      }
+      if(SNT){
+          document.write(number+" la so nguyen to")
+      } else{
+          document.write(number+" ko phai so nguyn to")
+      }
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai1
+// document.write(tinh_binh_phuong(+prompt("nhập số vào đây")))
+//     function tinh_binh_phuong(number) {
+//         let result=number*number;
+//         return result;
+//     }
+
+    //bai2
+    // function tinhDt(bank) {
+    //     let dienTich= bank*bank*3.14;
+    //     return dienTich;
+    // }
+    // function tinh_chu_vi(bank) {
+    //     let chuVi= bank*2*3.14;
+    //     return chuVi;
+    // }
+    // let a=+prompt("nhập bán kính vào đây");
+    // document.write(tinhDt(a)+"<br>");
+    // document.write(tinh_chu_vi(a));
+
+//bài3
+//     document.write(tinhGT(+prompt("nhập số vào đây")))
+//     function tinhGT(number) {
+//         if(number>2) {
+//             return result= number*tinhGT(number-1);
+//         } else {
+//             return 2;
+//         }
+//     }
+
+    //bài4
+//    function isNumber(num) {
+//        if(!isNaN(num)){
+//            return true;
+//        } else {
+//            return false;
+//        }
+//    }
+// document.write(isNumber(+prompt("nhập số vào đây")))
+
+    //bai5
+    // document.write(tim_gia_tri_nho_nhat(+prompt("nhập số thứ nhất"),+prompt("nhập số thứ 2"),+prompt("nhập số thứ 3")));
+    // function tim_gia_tri_nho_nhat(num1,num2,num3) {
+    //     if(num1<num2 && num1<num3) {
+    //         return num1;
+    //     }
+    //     if(num2<num1 && num2 <num3) {
+    //         return num2;
+    //     }
+    //     if(num3<num1 && num3 <num2) {
+    //         return num3;
+    //     }
+    // }
+
+    //bài6
+    // document.write(kiem_tra_so_nguyen_duong(+prompt("nhập số vào đây")))
+    // function kiem_tra_so_nguyen_duong(number) {
+    //     if(number>0 && number%1==0) {
+    //         return number + " là số nguyên dương"
+    //     } else{
+    //         return number+" ko phải số nguyên dương"
+    //     }
+    // }
+
+    //bài7
+    // let a = 5
+    // let b = 10
+    //
+    // function doi_cho_hai_so(num1,num2) {
+    //      let so_nao_do=num1;
+    //       num1=num2;
+    //       num2= so_nao_do;
+    //     return [num1,num2];
+    // }
+    // let arr = doi_cho_hai_so(a,b)
+    // a = arr[0]
+    // b = arr[1]
+    // alert(a + ',' + b)
+
+
+    //bài8
+//khai báo mảng:
+    //  let arr=[];
+    //  let n=+prompt("nhập vào số phần tử của mảng");
+    //  for(let i=0;i<n;i++){
+    //      arr[i]=prompt("nhập vào phần tử thứ "+(i+1)+"của mảng")
+    //  }
+    // document.write("Mảng sau khi đảo ngược sẽ là: "+dao_nguoc_mang(arr) )
+
+//cách1:
+    // function dao_nguoc_mang(array) {
+    //    return array.reverse();
+    // }
+
+
+//cách 2:
+//     function dao_nguoc_mang(array) {
+//         for(let i=0; i<array.length/2;i++) {
+//             let temp= array[i];
+//             array[i]=array[array.length-i-1];
+//             array[array.length-i-1]=temp;
+//         } return array;
+//     }
+
+    //bài9:
+    let arr=[];
+      let n=+prompt("nhập vào số phần tử của mảng");
+      for(let i=0;i<n;i++){
+          arr[i]=prompt("nhập vào phần tử thứ "+(i+1)+"của mảng")
+      }
+    let so_nao_do=prompt('Nhập số cần xét vào đây:');
+      document.write(quan_he_giua_so_va_mang(arr,so_nao_do));
+
+      function quan_he_giua_so_va_mang(array,num) {
+          let count=0;
+          for(let i=0;i<array.length;i++) {
+              if( num==array[i]) {
+                  count+=1;
+              }
+          }  if(count==0) {
+              return -1;
+          } else{
+              return count;
+          }
+
+      }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bài1
+   // alertMessage()
+   //  function alertMessage() {
+   //      alert("Xin chào");
+   //  }
+
+    // //bài2
+    // document.write("số đc tăng lên 1 giá trị là:"+tang_gia_tri_so(+prompt("nhập số ")));
+    // function tang_gia_tri_so(number) {
+    //     let result= number+1;
+    //     return result;
+    // }
+
+    //bài4
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result);
+    // result = addNumbers();
+    // alert(result);
+
+    //bài3
+
+   // let so1=+prompt("nhập số 1");
+   // let so2=+prompt("nhap so 2");
+   //  ko_biet_dat_ten_gi(so1,so2);
+   //
+   //  function ko_biet_dat_ten_gi(num1,num2) {
+   //      if(num1>num2) {
+   //          alert("số thứ nhất lớn hơn số thứ 2")
+   //      } else{
+   //          alert(tong=num2+num1);
+   //      }
+   //  }
+
+    //bai 5
+let sao1=[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair","Dubhe","Regulus"];
+let sao2=[ "Ursa Minor", "Tarurus", "Cygnus","Lyra", "Aquila", "Ursa Major", "Leo"];
+document.write(ham_nay_ko_co_ten(prompt("nhập vào đây tên ngôi sao")));
+function ham_nay_ko_co_ten(sao) {
+    let index_sao1=0;
+    let result="";
+    for(let i=0; i<sao1.length; i++){
+        if(sao==sao1[i]) {
+            index_sao1=i;
+            for(let j=0; j<sao2.length;j++) {
+                if(index_sao1==j) {
+                    result= sao2[j];
+                    return result;
+                }else{
+                    result="ko tìm thấy chòm sao";
+                    return result;
+                }
+            }
+
+        } else{
+            result="ko tìm thấy đâu";
+            return result;
+        }
+    }
+}
+
+
+
+
+</script>
+</body>
+</html>
